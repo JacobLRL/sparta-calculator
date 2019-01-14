@@ -19,8 +19,8 @@ while (true) {
 
     if (level === "basic") {
         operation = prompt("What operator would you like to use?\n 'addition', 'subtraction', 'multiplication' or 'division'");
-        num1 = parseInt(prompt("What is your first input number?"));
-        num2 = parseInt(prompt("What is your second input number?"));
+        num1 = parseFloat(prompt("What is your first input number?"));
+        num2 = parseFloat(prompt("What is your second input number?"));
         switch (operation) {
             case "addition":
                 alert(`Your answer is: ${addition(num1, num2)}`);
@@ -43,8 +43,8 @@ while (true) {
         switch (operation) {
             case "BMI":
                 unit = prompt("Which unit of measurement would you like, \n 'Metric' or 'Imperial'");
-                weight = parseInt(prompt("What is your weight?"));
-                height = parseInt(prompt("What is your height?"));
+                weight = parseFloat(prompt("What is your weight?"));
+                height = parseFloat(prompt("What is your height?"));
                 if (unit === "Metric") {
                     alert(`Your BMI is: ${bmiMetric(weight, height)}`);
                 } else if(unit === "Imperial"){
@@ -52,7 +52,7 @@ while (true) {
                 }
                 break;
             case "convert":
-                temp = parseInt(prompt("What temperature would you like to convert?"));
+                temp = parseFloat(prompt("What temperature would you like to convert?"));
                 alert(`The temperature ${temp} is ${convert(temp)} in Farenheit`);
                 break;
             default:
